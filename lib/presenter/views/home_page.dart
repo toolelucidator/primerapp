@@ -21,7 +21,6 @@ class HomePage extends GetView<HomeController> {
               BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
               BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
               BottomNavigationBarItem(icon: Icon(Icons.question_mark), label: 'About'),
-
             ],
           ),
         ));
