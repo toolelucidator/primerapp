@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:primerapp/presenter/bindings/app_bindings.dart';
+import 'package:primerapp/presenter/views/about_page.dart';
 import 'package:primerapp/presenter/views/profile_page.dart';
 import 'package:primerapp/presenter/views/search_page.dart';
 
@@ -11,6 +12,7 @@ class HomeController extends GetxController {
   final pages = <String>[
     '/Search',
     '/Profile',
+    '/About',
   ];
 
   void changePage(int index) {
@@ -19,7 +21,6 @@ class HomeController extends GetxController {
   }
 
   Route? onGenerateRoute(RouteSettings settings) {
-
     if (settings.name == '/Search') {
       return GetPageRoute(
         settings: settings,
@@ -32,6 +33,13 @@ class HomeController extends GetxController {
         settings: settings,
         page: () => ProfilePage(),
         binding: ProfileBinding(),
+      );
+    }
+    if (settings.name == '/About') {
+      return GetPageRoute(
+        settings: settings,
+        page: () => AboutPage(),
+        binding: AboutBinding(),
       );
     }
     return null;
