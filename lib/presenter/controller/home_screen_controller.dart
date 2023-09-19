@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:primerapp/presenter/bindings/app_bindings.dart';
-import 'package:primerapp/presenter/views/home_page.dart';
 import 'package:primerapp/presenter/views/profile_page.dart';
 import 'package:primerapp/presenter/views/search_page.dart';
 
