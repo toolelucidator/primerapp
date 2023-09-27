@@ -1,4 +1,4 @@
-//THIS IS A CHANGE FROM TICKET1 TO DEVELOP
+//THIS IS A CHANGE FROM DEMO TICKET TO DEVELOP
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:primerapp/presenter/controller/login_controller.dart';
@@ -12,7 +12,7 @@ class SearchPage extends GetView<LoginPageController> {
         appBar: AppBar(
           automaticallyImplyLeading: false,
           centerTitle: true,
-          title: const Text('Search'),
+          title: const Text('Login Page'),
         ),
         body: SingleChildScrollView(
           child: Center(
