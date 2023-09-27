@@ -17,10 +17,12 @@ class HomePage extends GetView<HomeController> {
             onTap: controller.changePage,
             selectedItemColor: Colors.redAccent,
             items: const [
-            //  BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-              BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-              BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-              BottomNavigationBarItem(icon: Icon(Icons.question_mark), label: 'About'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.login ), label: 'Login'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.person), label: 'Profile'),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.question_mark), label: 'About'),
             ],
           ),
         ));

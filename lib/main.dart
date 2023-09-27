@@ -6,6 +6,7 @@ import 'package:primerapp/presenter/views/home_page.dart';
 
 void main() {
   runApp(GetMaterialApp(
+    darkTheme: ThemeData.dark(),
     debugShowCheckedModeBanner: false,
     initialRoute: '/Home',
     defaultTransition: Transition.fade,

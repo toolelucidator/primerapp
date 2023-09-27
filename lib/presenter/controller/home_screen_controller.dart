@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:primerapp/presenter/bindings/app_bindings.dart';
 import 'package:primerapp/presenter/views/about_page.dart';
 import 'package:primerapp/presenter/views/profile_page.dart';
-import 'package:primerapp/presenter/views/search_page.dart';
+import 'package:primerapp/presenter/views/login_page.dart';
 
 class HomeController extends GetxController {
   static HomeController get to => Get.find();
@@ -25,7 +25,7 @@ class HomeController extends GetxController {
       return GetPageRoute(
         settings: settings,
         page: () => SearchPage(),
-        binding: SearchBinding(),
+        binding: LoginBinding(),
       );
     }
     if (settings.name == '/Profile') {
